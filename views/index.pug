@@ -1,0 +1,13 @@
+html
+    head
+        title UserManger app
+    body
+        h1 create a user
+        form( action='/addUser' method='post')
+            input(placeholder='name' name='name')
+            br
+            input(placeholder='email address' name='email')
+            br
+            input(placeholder='age' name='age')
+            br
+            input(type='submit' value='addUser')

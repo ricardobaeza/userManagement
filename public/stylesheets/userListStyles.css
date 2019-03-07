@@ -1,0 +1,39 @@
+
+.container {
+    border: 1px solid black;
+    display: flex;
+    width: 800px;
+}
+.field-container {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-right: 1px solid black;
+}
+.number-container {
+    width: 100px;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.header {
+    display: flex;
+    width: 800px;
+    margin-left: 40px;
+    border: 1px solid black
+}
+
+ul{
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.edit-del-links {
+    margin: 10px
+}
