@@ -17,7 +17,7 @@ html
             div(class='number-container')
                 p user Id
         ul
-            each val in jsonUser.users
+            each val, index in jsonUser.users
                 div(class='flex-container')
                     div(class= 'container')
                         div(class='field-container')
@@ -29,6 +29,6 @@ html
                         div(class='number-container')
                             p= val.userId
                     p(class='edit-del-links')
-                        a(href="/deleteUser") Delete
+                        a(href=`/deleteUser/${val.userId}`) Delete
                     p(class='edit-del-links')
-                        a(href="/editUser") Edit
+                        a(href=`/editUser/${val.userId}`) Edit

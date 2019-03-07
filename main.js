@@ -36,11 +36,11 @@ app.get('/adduser', (req, res)=> {
     res.render(userListingPage, {jsonUser: jsonUser})
 })
 
-app.get('/deleteUser', (req, res)=> {
-    res.send('this is the delete page')
+app.get(`/deleteUser/:id`, (req, res)=> {
+    res.send(`the id of the user is ${req.params.id}`)
 })
 
-app.get('/editUser', (req, res)=> {
+app.get('/editUser/:id', (req, res)=> {
     res.send('this is the delete page')
 })
 app.listen('2319', ()=> {
