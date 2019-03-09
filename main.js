@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const fs = require('fs')
+const PORT = process.env.PORT || 2319;
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
@@ -68,7 +69,7 @@ app.post('/editUser/:index', (req, res)=> {
     });
     res.redirect('/addUser');
 })
-app.listen('2319', ()=> {
+app.listen(PORT, ()=> {
     console.log('app is running on port 2319')
 });
 
