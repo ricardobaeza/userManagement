@@ -11,8 +11,9 @@ app.use((express.urlencoded({extended: false})));
 app.use(express.static('public'));
 
 app.get('/', (req, res)=> {
-    res.redirect('/addUser');
+    res.render('index')
 });
+
 
 
 app.post('/addUser', (req, res)=> {
