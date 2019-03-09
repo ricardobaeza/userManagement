@@ -1,0 +1,14 @@
+html
+    head
+        title Edit User
+    body
+        h1 Edit user
+        form(action=`/editUser/${index}` method="post")
+            input(type="text" value = jsonUser.name name='name')
+            br
+            input(type="text" value = jsonUser.email name='email')
+            br
+            input(type="text" value = jsonUser.age  name='age')
+            br
+            input(type="submit", value="Submit Changes")
+        

@@ -29,6 +29,8 @@ html
                         div(class='number-container')
                             p= val.userId
                     p(class='edit-del-links')
-                        a(href=`/deleteUser/${val.userId}`) Delete
+                        a(href=`/deleteUser/${index}`) Delete
                     p(class='edit-del-links')
-                        a(href=`/editUser/${val.userId}`) Edit
+                        a(href=`/editUser/${index}`) Edit
+        p
+            a(href='/') Add User
