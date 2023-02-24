@@ -1,0 +1,5 @@
+/* Copyright (C) Ricardo Baeza, Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Ricardo Baeza<baezaric3600@gmail.com> Feb 23, 2023
+ */
